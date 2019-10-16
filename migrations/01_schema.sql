@@ -17,7 +17,7 @@ CREATE TABLE properties (
   owner_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
 
   title VARCHAR(255) NOT NULL,
-  descripion TEXT,
+  description TEXT,
   thumbnail_photo_url VARCHAR(255) NOT NULL,
   cover_photo_url VARCHAR(255) NOT NULL,
   cost_per_night INTEGER NOT NULL DEFAULT 0,
